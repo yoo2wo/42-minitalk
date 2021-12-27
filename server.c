@@ -6,7 +6,7 @@
 /*   By: jayoo <jayoo@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/13 16:56:03 by jayoo             #+#    #+#             */
-/*   Updated: 2021/12/22 17:12:06 by jayoo            ###   ########.fr       */
+/*   Updated: 2021/12/27 15:06:21 by jayoo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,8 @@ void	handler(int signo, siginfo_t *info, void *context)
 	static int				idx;
 	static int				count;
 
+	(void)info;
+	(void)context;
 	if (--count == -1)
 	{
 		count = 7;
